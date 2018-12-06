@@ -1,0 +1,6 @@
+<%= @posts.each do |post| %>
+<%= post.title %>
+<%= post.content %>
+<%= post.likes %>
+<% end %>
+<%= button_to "new post", new_post_path, method: :get%>

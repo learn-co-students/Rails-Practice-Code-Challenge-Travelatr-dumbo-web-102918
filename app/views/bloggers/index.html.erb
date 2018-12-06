@@ -1,0 +1,7 @@
+<%= link_to "create new blogger", '/bloggers/new' %>
+<% @bloggers.each do |blogger| %>
+<p><%= link_to blogger.name, blogger_path(blogger) %>
+  <%= blogger.age %>
+<p><%= blogger.bio %></p></p>
+
+<% end %>

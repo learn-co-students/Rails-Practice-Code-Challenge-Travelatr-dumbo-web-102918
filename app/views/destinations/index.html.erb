@@ -1,0 +1,7 @@
+<% @destinations.each do |destination| %>
+<%= destination.name%>
+<%= destination.country %><br>
+<%= link_to "view", destination %><br>
+<% end  %>
+
+<%= link_to "new destination", '/destinations/new' %>
